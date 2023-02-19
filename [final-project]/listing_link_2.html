@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favIcon.png" type="image/x-icon">
+    <title>Carlos Gonzales Listings 2</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="CG_Logo2.png" alt="CG_logo" width="135px" height="150px">
+        </header>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="listings.html" class="active">LISTINGS</a>
+            <a href="salePage.html">SALE</a>
+            <a href="contact_us.html">CONTACT </a>
+            <a href="sitemap.html">SITEMAP</a>
+        </nav>
+        <div class="product-gallery">
+            <!--Left Side Gallery-->
+            <div class="product-gallery myProducts">
+                <div class="myProducts-gallery">
+                    <img src="listings/property2.jpg" alt="click here" onclick="myImageFunction(this)">
+                    <img src="listings/property2_1.jpg" alt="click here"
+                        onclick="myImageFunction(this)">
+                    <img src="listings/property2_4.jpg" alt="click here"
+                        onclick="myImageFunction(this)">
+                    <img src="listings/property2_3.jpg" alt="click here"
+                        onclick="myImageFunction(this)">
+                </div>
+
+                <!--BIG PREVIEW-->
+                <div class="image-container">
+                    <img id="img-Box" src="listings/property2.jpg" alt="click here">
+                </div>
+
+
+                <script>
+                    function myImageFunction(productSmallImg) {
+                        var productFullImg = document.getElementById("img-Box");
+                        productFullImg.src = productSmallImg.src;
+                    }
+                </script>
+                <div class="gallery-text">
+                    <h2>1834 N Vineyard</h2><br>
+                    <h3>1,512 sqft. lot</h3>
+                    <h5>Apartment | 3 bedrooms | 2.5 bathrooms</h5>
+                    <p class="price">$495,000</p>
+                    <h6>Fantastic home in the sought after location. The impeccable kitchen has stylish
+                        counters and ample counter space. Flow into the living room featuring a cozy
+                        fireplace, perfect for entertaining. The bedrooms offer plenty of natural lighting
+                        and sizable closets, allowing for comfy living. </h6>
+                </div>
+            </div>
+
+            <footer>
+                <p>Copyright &copy; Carl Kevin Gasal - COMP213/WEB DESIGN - Fall2022</p>
+                <h5>Web:
+                    <a href="http://studentweb.cencol.ca/cgasal/">
+                        More projects for viewing here</a>
+                    Email: <a href="mailto:cgasal@my.centennialcollege.ca">
+                        cgasal@my.centennialcollege.ca</a>
+                </h5>
+            </footer>
+        </div>
+</body>
+
+</html>

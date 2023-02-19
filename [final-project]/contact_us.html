@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favIcon.png" type="image/x-icon">
+    <link id="u-theme-google-font" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <title>CG Realtor - Contact Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="CG_Logo2.png" alt="CG_logo" width="135px" height="150px">
+        </header>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="listings.html">LISTINGS</a>
+            <a href="salePage.html">SALE</a>
+            <a href="contact_us.html" class="active">CONTACT </a>
+            <a href="sitemap.html">SITEMAP</a>
+        </nav>
+        <form action="https://formsubmit.co/circarlkevin@gmail.com" method="POST"/>
+            <h1>GET A QUOTE TODAY</h1>
+            <h4>For more information, please send us a message by filling up below.</h4>
+            <br>
+            <!-- Name -->
+            <div class="form-control">
+                <label for="fName" id="fName">
+                    First Name:<span>*</span>
+                </label>
+                <input type="text" id="fName" name="fName" placeholder="Eduardo" required />
+            </div>
+            <div class="form-control">
+                <label for="lName" id="lName">
+                    Last Name:<span>*</span>
+                </label>
+                <input type="text" id="lName" name="lName" placeholder="Versoza" required />
+            </div>
+            <div class="form-control">
+                <label for="address" id="address">
+                    Address:<span>*</span>
+                </label>
+                <input type="text" id="address" name="address" placeholder="Scarborough, Ontario, Canada" required />
+            </div>
+            <div class="form-control">
+                <label for="phone">Phone number:</label><span>*</span>
+                <input type="tel" id="phone" name="phone" placeholder="647-000-0000" required>
+            </div>
+            <!-- DATE -->
+            <div class="form-control">
+
+                <label for="dateToday">Date:</label>
+                <input type="date" id="dateToday" name="dateToday">
+            </div>
+
+            <div class="form-control">
+
+                <div class="threeRow">
+                    <!-- Inquiry on Type of Houses -->
+                    <div class="threeCol">
+                                  <h4>Inquiry about</h4>
+                                  <label for="house_inquire">
+                                      <input type="radio" id="houses" name="house_inquire">Houses</input>
+                                  </label><br>
+                                  <label for="house_inquire">
+                                      <input type="radio" id="condos" name="house_inquire">Condos</input>
+                                  </label><br>
+                                  <label for="house_inquire">
+                                      <input type="radio" id="townhomes" name="house_inquire">Townhomes</input>
+                                  </label><br>
+                                  <label for="house_inquire">
+                                      <input type="radio" id="apartments" name="house_inquire">Apartments</input>
+                                  </label><br>
+                    </div>
+                    <!-- Checkbox for # of Bedrooms-->
+                    <div class="threeCol">
+                                  <h4>No. of Bedrooms</h4>
+                                  <input type="checkbox" id="bedrooms_none" name="bedrooms_none" value="bed0">
+                                  <label for="studio_type"> Studio Type</label><br>
+                                  <input type="checkbox" id="bedrooms_1" name="bedrooms_1" value="bed1">
+                                  <label for="bedroom1"> 1 Bedroom</label><br>
+                                  <input type="checkbox" id="bedrooms_2" name="bedrooms_2" value="bed2">
+                                  <label for="bedroom2"> 2 Bedrooms</label><br>
+                                  <input type="checkbox" id="bedrooms_3" name="bedrooms_3_plus" value="bed3">
+                                  <label for="bedroom3"> 3+ Bedroom</label><br><br>
+                    </div>
+                    <!-- Checkbox for # of Bathrooms-->
+                    <div class="threeCol">
+                                  <h4>No. of Bathrooms</h4>
+                                  <input type="checkbox" id="bath_none" name="bath_none" value="bath_any">
+                                  <label for="bath_any"> Any</label><br>
+                                  <input type="checkbox" id="bath_1" name="bath_1" value="bath1">
+                                  <label for="bathroom1"> 1+ Bathrooms</label><br>
+                                  <input type="checkbox" id="baths_2" name="bath_2" value="bath2">
+                                  <label for="bathroom2"> 2+ Bathrooms</label><br>
+                                  <input type="checkbox" id="bath_3" name="bath_3_plus" value="bath3">
+                                  <label for="bathroom3"> 3+ Bathrooms</label><br><br>
+                    </div>
+                  </div>
+                <!-- Price Range of inquiry-->
+                <div class="price_row">
+                    <div class="price_column">
+                      <label for="price-min">Price Min ($550 - $2,500+):</label>
+                      <input type="range" name="price-min" id="price-max" value="550" min="0" max="2500">
+                    </div>
+                    <div class="price_column">
+                      <label for="price-max">Price Max ($1,500+ - $5,000+):</label>
+                      <input type="range" name="price-max" id="price-max" value="1500" min="0" max="5000">
+                    </div>
+                  </div>
+
+                <!-- Comments and message -->
+                <div class="form-control">
+                    <label for="comment">
+                        <h4>Message:</h4>
+                    </label>
+                    <textarea rows="4" id="comment" name="Message"></textarea>
+                    <small>* The information given within the Feedback Form will be used for service improvement only
+                        and are
+                        strictly
+                        confidential.</small><br><br>
+                </div>
+                <button type="submit" value="submit">
+                    Submit
+                </button>
+                <button type="clear" 
+                    class="Clear">
+                    <a class="button" href="contact_us.html"> Clear</a>
+                </button>
+            </div>
+        </form>
+
+        <footer>
+            Copyright &copy; Carl Kevin Gasal - COMP213/WEB DESIGN - Fall2022
+            <h5>Web:
+                <a href="http://studentweb.cencol.ca/cgasal/">
+                    More projects for viewing here</a>
+                Email: <a href="mailto:cgasal@my.centennialcollege.ca">
+                    cgasal@my.centennialcollege.ca</a>
+            </h5>
+        </footer>
+    </div>
+</body>
+
+</html>

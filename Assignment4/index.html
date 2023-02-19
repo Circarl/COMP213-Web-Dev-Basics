@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="evaluation.css">
+    <title>
+        Centennial College Evaluation Form
+    </title>
+
+</head>
+
+<body>
+    
+    <!-- Form -->
+    <form id="form">
+        <header>
+            <div class="banner">
+                <a href="https://www.centennialcollege.ca/"><img src="banner.jpg" width="960px" class="banner"
+                        target="_toblank"></a>
+            </div>
+        </header>
+        <nav>
+            <ul>
+              <li><a href="http://studentweb.cencol.ca/cgasal/">Home</a></li>
+            </ul>
+        </nav>
+        <h1>Centennial College</h1>
+        <h2>Continuing Education Course / Instructor Evaluation</h2>
+        <p>Thank you for taking the time to fill in our online feedback form. Please read each
+            statement carefully and consider each one individually. Give only one answer for each question.</p>
+        <br>
+        <!-- Course Name -->
+        <div class="form-control">
+            <label for="courseName" id="courseName">
+                Course Name/Code:<span>*</span>
+            </label>
+            <input type="text" id="name" placeholder="Eg. COMP213" required/>
+        </div>
+
+        <!-- Instructor -->
+        <div class="form-control">
+            <label for="instructor" id="instructor">
+                Instructor:<span>*</span>
+            </label>
+            <input type="text" id="instructor" placeholder="Eg. Prof. Oak" required/>
+        </div>
+
+        <!-- Year -->
+        <div class="form-control">
+            <label for="year" id="year">
+                Year:<span>*</span>
+            </label>
+
+            <!-- Dropdown options -->
+            <select name="year" id="year" required>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label for="currentSemester" id="currentSemester">
+                Semester:<span>*</span>
+            </label>
+
+            <!-- Dropdown options -->
+            <select name="semester" id="semester" required>
+                <option value="fall">Fall</option>
+                <option value="springSummer">Spring or Summer</option>
+                <option value="winter">Winter</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <h3>How would you rate the Instructor's:</h3>
+            <hr>
+
+            <!-- knowledge -->
+            <h4>1. Knowledge of the subject?</h4>
+            <label for="knowledge-3">
+                <input type="radio" id="knowledge" name="knowledge">Excellent</input>
+            </label>
+            <label for="knowledge-2">
+                <input type="radio" id="knowledge" name="knowledge">Good</input>
+            </label>
+            <label for="knowledge-1">
+                <input type="radio" id="knowledge" name="knowledge">Fair</input>
+            </label>
+            <label for="knowledge-0">
+                <input type="radio" id="knowledge" name="knowledge">Not Satisfactory</input>
+            </label>
+            <!-- Helpfulness -->
+            <h4>2. Helpfulness?</h4>
+            <label for="helpfulness-3">
+                <input type="radio" id="helpfulness" name="helpfulness">Excellent</input>
+            </label>
+            <label for="helpfulness-2">
+                <input type="radio" id="helpfulness" name="helpfulness">Good</input>
+            </label>
+            <label for="helpfulness-1">
+                <input type="radio" id="helpfulness" name="helpfulness">Fair</input>
+            </label>
+            <label for="helpfulness-0">
+                <input type="radio" id="helpfulness" name="helpfulness">Not Satisfactory</input>
+            </label>
+            <!-- courtesy and respect -->
+            <h4>3. Courtesy and respect for all students?</h4>
+            <label for="Courtesy-and-respect-3">
+                <input type="radio" id="Courtesy-and-respect" name="Courtesy-and-respect">Excellent</input>
+            </label>
+            <label for="Courtesy-and-respect-2">
+                <input type="radio" id="Courtesy-and-respect" name="Courtesy-and-respect">Good</input>
+            </label>
+            <label for="Courtesy-and-respect-1">
+                <input type="radio" id="Courtesy-and-respect" name="Courtesy-and-respect">Fair</input>
+            </label>
+            <label for="Courtesy-and-respect-0">
+                <input type="radio" id="Courtesy-and-respect" name="Courtesy-and-respect">Not Satisfactory</input>
+            </label>
+            <!-- Communication skills -->
+            <h4>4. Communication skills?</h4>
+            <label for="Communication-skills-3">
+                <input type="radio" id="Communication-skills" name="Communication-skills">Excellent</input>
+            </label>
+            <label for="Communication-skills-2">
+                <input type="radio" id="Communication-skills" name="Communication-skills">Good</input>
+            </label>
+            <label for="Communication-skills-1">
+                <input type="radio" id="Communication-skills" name="Communication-skills">Fair</input>
+            </label>
+            <label for="Communication-skills-0">
+                <input type="radio" id="Communication-skills" name="Communication-skills">Not Satisfactory</input>
+            </label>
+            <!-- 5. Overall Performance -->
+            <h4>5. Overall performance?</h4>
+            <label for="overallPerformance-3">
+                <input type="radio" id="overallPerformance" name="overallPerformance">Excellent</input>
+            </label>
+            <label for="overallPerformance-2">
+                <input type="radio" id="overallPerformance" name="overallPerformance">Good</input>
+            </label>
+            <label for="overallPerformance-1">
+                <input type="radio" id="overallPerformance" name="overallPerformance">Fair</input>
+            </label>
+            <label for="overallPerformance-0">
+                <input type="radio" id="overallPerformance" name="overallPerformance">Not Satisfactory</input>
+            </label>
+            <h3>How would you rate the Course?</h3><hr>
+            <!--6. Course Materials -->
+            <h4>6. How would you rate the course materials?</h4>
+            <label for="courseMaterials-3">
+                <input type="radio" id="courseMaterials" name="courseMaterials">Excellent</input>
+            </label>
+            <label for="courseMaterials-2">
+                <input type="radio" id="courseMaterials" name="courseMaterials">Good</input>
+            </label>
+            <label for="courseMaterials-1">
+                <input type="radio" id="courseMaterials" name="courseMaterials">Fair</input>
+            </label>
+            <label for="courseMaterials-0">
+                <input type="radio" id="courseMaterials" name="courseMaterials">Not Satisfactory</input>
+            </label>
+            <!-- 7. How much did this course meet your expectations? -->
+            <h4>7. How much did this course meet your expectations?</h4>
+            <label for="courseExpectations-3">
+                <input type="radio" id="courseExpectations" name="courseExpectations">Excellent</input>
+            </label>
+            <label for="courseExpectations-2">
+                <input type="radio" id="courseExpectations" name="courseExpectations">Good</input>
+            </label>
+            <label for="courseExpectations-1">
+                <input type="radio" id="courseExpectations" name="courseExpectations">Fair</input>
+            </label>
+            <label for="courseExpectations-0">
+                <input type="radio" id="courseExpectations" name="courseExpectations">Not Satisfactory</input>
+            </label>
+            <!-- 8. How would you rate this course (overall)? -->
+            <h4>8. How would you rate this course (overall)?</h4>
+            <label for="courseOverall-3">
+                <input type="radio" id="courseOverall" name="courseOverall">Excellent</input>
+            </label>
+            <label for="courseOverall-2">
+                <input type="radio" id="courseOverall" name="courseOverall">Good</input>
+            </label>
+            <label for="courseOverall-1">
+                <input type="radio" id="courseOverall" name="courseOverall">Fair</input>
+            </label>
+            <label for="courseOverall-0">
+                <input type="radio" id="courseOverall" name="courseOverall">Not Satisfactory</input>
+            </label>
+            <h3>General Information</h3><hr>
+            <h4>9. Was the course outline reviewed/explained at the beginning of your course?</h4>
+            <select name="reviewExplained" id="reviewExplained">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="NotSure">Not Sure</option>
+            </select>
+
+            <h4>10. Would you recommend this course to a friend with the same interests?</h4>
+            <select name="referrals" id="referrals">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="NotSure">Not Sure</option>
+            </select>
+
+        </div>
+        <br>
+
+        <div class="form-control">
+            <label for="comment1">
+                <h4>What is the best thing about this course?:</h4>
+            </label>
+            <textarea rows="2"></textarea>
+            <label for="comment2">
+                <h4>How could we improve this course:</h4>
+            </label>
+            <textarea rows="2"></textarea>
+            <label for="comment3">
+                <h4>Any other comments:</h4>
+            </label>
+            <textarea rows="4"></textarea>
+            <small>* The information given within the Feedback Form will be used for service improvement only and are
+                strictly
+                confidential.</small>
+        </div>
+        <button type="submit" value="submit">
+            Submit Evaluation
+        </button>
+        <h4>Thank you! We pay attention to your feedback!</h4>
+        <h5>Web:
+        <a href="https://www.centennialcollege.ca/continuing_education">
+            www.centennialcollege.ca/continuingeducation</a>
+            Email: <a href="mailto:continuingeducation@centennialcollege.ca">
+            continuingeducation@centennialcollege.ca</a></h5>
+      
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+nav{
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.intro p{
+    display: block;
+    text-align: center;
+}
+body{
+    color: #ffffff;
+    font-family: Verdana;
+}
+.container{
+    margin: auto;
+    width: auto;
+    border: 3px solid #ffffff;
+    padding: 1px;
+    text-align: center;
+    background-image: url(https://images.rawpixel.com/image_1000/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3B4NjgwMzA2LWltYWdlLWt3dnhocG1mLmpwZw.jpg);
+    height: 100%;
+    background-color: beige;
+    background-size: cover;
+}
+.hyperlinks{
+	color: #ffffff;
+	text-align: center;
+    display: inline-flex;
+	margin-right: 25px;
+	transition: all .3 linear;
+    list-style-image: url(https://th.bing.com/th/id/R.981b5bbebbf3b851bd82e623b79bbd2c?rik=V6jnlyyMjks6Qw&riu=http%3a%2f%2fwww.goatlings.com%2fimages%2fforums%2fwave.gif&ehk=MPk%2b99fZItbMw7TK%2fZ9tuAsy5yRHJKZTx1ynGcT1WRI%3d&risl=&pid=ImgRaw&r=0);
+}
+footer{
+    color: bisque;
+    text-shadow: #1f1c1c;
+}
+h4{
+    color: #1f1c1c;
+    width: auto;
+    background-color: beige;
+    filter: blur(50%);
+}
+a:link {
+    color: #ffffff
+}
+a:visited {
+    color:white;
+}
+a:hover {
+    color: yellow;
+}
+td{
+    align-content: center;
+}
+.references{
+    list-style: square;
+    position: center;;
+    display: inline-flex;
+}

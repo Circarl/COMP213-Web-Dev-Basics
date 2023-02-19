@@ -1,0 +1,60 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;}
+
+header{
+    background-image: url(sunset.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #161414; color: white;
+    line-height: 400%;
+    text-indent: 1em;
+}
+
+nav{
+    background-color: skyblue;
+    font-weight: bold;
+}
+nav a {
+    text-decoration: none;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0;}
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #003;}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000033;}
+ul{
+    list-style-image: url(marker.gif);
+}
+footer {
+    font-size: 75%;
+}
+#contact{
+    font-size: 90%;
+}
+.resort{color:#5C7FA3;font-size: medium;}
+table{
+    font-weight: bold;
+    border: 2px solid #3399CC;
+    border-collapse:collapse;
+}
+td, th{
+    padding: 0.5em;
+    border: 2px solid #3399CC;
+}
+td{
+    text-align: center;
+}
+.text{
+    text-align: left;
+}
+tr :nth-of-type(even) {
+    background-color: #a2b4bb;
+}
